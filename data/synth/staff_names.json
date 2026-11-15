@@ -1,0 +1,322 @@
+{
+  "ST-001": {
+    "first_name": "Руслан",
+    "last_name": "Афанасьев",
+    "middle_name": "Павлович",
+    "phone": "+7 (950) 050-54-40",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660022"
+  },
+  "ST-002": {
+    "first_name": "Сергей",
+    "last_name": "Морозов",
+    "middle_name": "Андреевич",
+    "phone": "+7 (922) 011-65-47",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660041"
+  },
+  "ST-003": {
+    "first_name": "Виктор",
+    "last_name": "Антонов",
+    "middle_name": "Олегович",
+    "phone": "+7 (950) 016-81-37",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660058"
+  },
+  "ST-004": {
+    "first_name": "Сергей",
+    "last_name": "Белов",
+    "middle_name": "Павлович",
+    "phone": "+7 (932) 041-57-87",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660084"
+  },
+  "ST-005": {
+    "first_name": "Илья",
+    "last_name": "Казаков",
+    "middle_name": "Алексеевич",
+    "phone": "+7 (908) 010-05-35",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660090"
+  },
+  "ST-006": {
+    "first_name": "Максим",
+    "last_name": "Бажов",
+    "middle_name": "Васильевич",
+    "phone": "+7 (965) 068-01-13",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660116"
+  },
+  "ST-007": {
+    "first_name": "Владимир",
+    "last_name": "Лукин",
+    "middle_name": "Евгеньевич",
+    "phone": "+7 (953) 083-79-06",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660121"
+  },
+  "ST-008": {
+    "first_name": "Игорь",
+    "last_name": "Михайлов",
+    "middle_name": "Владимирович",
+    "phone": "+7 (950) 054-45-83",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660140"
+  },
+  "ST-009": {
+    "first_name": "Денис",
+    "last_name": "Денисов",
+    "middle_name": "Борисович",
+    "phone": "+7 (922) 081-03-83",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660168"
+  },
+  "ST-010": {
+    "first_name": "Галина",
+    "last_name": "Михайлова",
+    "middle_name": "Васильевна",
+    "phone": "+7 (965) 039-27-23",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660183"
+  },
+  "ST-011": {
+    "first_name": "Денис",
+    "last_name": "Чусовитин",
+    "middle_name": "Константинович",
+    "phone": "+7 (950) 038-21-17",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660192"
+  },
+  "ST-012": {
+    "first_name": "Руслан",
+    "last_name": "Осипов",
+    "middle_name": "Андреевич",
+    "phone": "+7 (922) 083-62-17",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660207"
+  },
+  "ST-013": {
+    "first_name": "Константин",
+    "last_name": "Фёдоров",
+    "middle_name": "Константинович",
+    "phone": "+7 (932) 052-84-87",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660223"
+  },
+  "ST-014": {
+    "first_name": "Олег",
+    "last_name": "Герасимов",
+    "middle_name": "Олегович",
+    "phone": "+7 (904) 017-33-57",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660246"
+  },
+  "ST-015": {
+    "first_name": "Сергей",
+    "last_name": "Новиков",
+    "middle_name": "Борисович",
+    "phone": "+7 (992) 058-15-40",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660269"
+  },
+  "ST-016": {
+    "first_name": "Сергей",
+    "last_name": "Комаров",
+    "middle_name": "Евгеньевич",
+    "phone": "+7 (953) 053-79-37",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660276"
+  },
+  "ST-017": {
+    "first_name": "Дмитрий",
+    "last_name": "Гусев",
+    "middle_name": "Петрович",
+    "phone": "+7 (965) 032-48-86",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660298"
+  },
+  "ST-018": {
+    "first_name": "Олег",
+    "last_name": "Шестаков",
+    "middle_name": "Николаевич",
+    "phone": "+7 (912) 043-61-78",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660306"
+  },
+  "ST-019": {
+    "first_name": "Егор",
+    "last_name": "Андреев",
+    "middle_name": "Иванович",
+    "phone": "+7 (992) 063-14-10",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660334"
+  },
+  "ST-020": {
+    "first_name": "Николай",
+    "last_name": "Чусовитин",
+    "middle_name": "Анатольевич",
+    "phone": "+7 (904) 072-43-59",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660343"
+  },
+  "ST-021": {
+    "first_name": "Борис",
+    "last_name": "Боровский",
+    "middle_name": "Иванович",
+    "phone": "+7 (961) 037-33-83",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660358"
+  },
+  "ST-022": {
+    "first_name": "Максим",
+    "last_name": "Лебедев",
+    "middle_name": "Михайлович",
+    "phone": "+7 (961) 037-82-23",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660383"
+  },
+  "ST-023": {
+    "first_name": "Павел",
+    "last_name": "Беляев",
+    "middle_name": "Андреевич",
+    "phone": "+7 (965) 014-01-87",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660397"
+  },
+  "ST-024": {
+    "first_name": "Александр",
+    "last_name": "Андреев",
+    "middle_name": "Борисович",
+    "phone": "+7 (982) 063-99-33",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660414"
+  },
+  "ST-025": {
+    "first_name": "Вадим",
+    "last_name": "Матвеев",
+    "middle_name": "Игоревич",
+    "phone": "+7 (908) 042-30-35",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660438"
+  },
+  "ST-026": {
+    "first_name": "Дмитрий",
+    "last_name": "Казаков",
+    "middle_name": "Алексеевич",
+    "phone": "+7 (908) 097-16-46",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660451"
+  },
+  "ST-027": {
+    "first_name": "Игорь",
+    "last_name": "Бажов",
+    "middle_name": "Викторович",
+    "phone": "+7 (961) 048-77-17",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660471"
+  },
+  "ST-028": {
+    "first_name": "Василий",
+    "last_name": "Макаров",
+    "middle_name": "Иванович",
+    "phone": "+7 (965) 067-10-95",
+    "position": "Инженер ЛТП",
+    "personnel_number": "660481"
+  },
+  "ST-029": {
+    "first_name": "Борис",
+    "last_name": "Карпов",
+    "middle_name": "Евгеньевич",
+    "phone": "+7 (965) 046-51-55",
+    "position": "Инсталлятор",
+    "personnel_number": "660508"
+  },
+  "ST-030": {
+    "first_name": "Евгений",
+    "last_name": "Пестов",
+    "middle_name": "Валерьевич",
+    "phone": "+7 (961) 024-91-47",
+    "position": "Инсталлятор",
+    "personnel_number": "660514"
+  },
+  "ST-031": {
+    "first_name": "Илья",
+    "last_name": "Богданов",
+    "middle_name": "Анатольевич",
+    "phone": "+7 (932) 023-82-22",
+    "position": "Инсталлятор",
+    "personnel_number": "660532"
+  },
+  "ST-032": {
+    "first_name": "Евгений",
+    "last_name": "Лукин",
+    "middle_name": "Сергеевич",
+    "phone": "+7 (982) 015-98-43",
+    "position": "Инсталлятор",
+    "personnel_number": "660556"
+  },
+  "ST-033": {
+    "first_name": "Руслан",
+    "last_name": "Герасимов",
+    "middle_name": "Евгеньевич",
+    "phone": "+7 (961) 031-87-88",
+    "position": "Инсталлятор",
+    "personnel_number": "660561"
+  },
+  "ST-034": {
+    "first_name": "Сергей",
+    "last_name": "Комаров",
+    "middle_name": "Павлович",
+    "phone": "+7 (932) 034-64-11",
+    "position": "Инсталлятор",
+    "personnel_number": "660579"
+  },
+  "ST-035": {
+    "first_name": "Вадим",
+    "last_name": "Киселёв",
+    "middle_name": "Алексеевич",
+    "phone": "+7 (982) 062-12-24",
+    "position": "Инсталлятор",
+    "personnel_number": "660596"
+  },
+  "ST-036": {
+    "first_name": "Светлана",
+    "last_name": "Тарасова",
+    "middle_name": "Павловна",
+    "phone": "+7 (982) 033-29-06",
+    "position": "Инсталлятор",
+    "personnel_number": "660626"
+  },
+  "ST-037": {
+    "first_name": "Михаил",
+    "last_name": "Сидоров",
+    "middle_name": "Александрович",
+    "phone": "+7 (965) 043-82-23",
+    "position": "Инсталлятор",
+    "personnel_number": "660641"
+  },
+  "ST-038": {
+    "first_name": "Вячеслав",
+    "last_name": "Богданов",
+    "middle_name": "Константинович",
+    "phone": "+7 (982) 013-96-22",
+    "position": "Инсталлятор",
+    "personnel_number": "660660"
+  },
+  "ST-039": {
+    "first_name": "Станислав",
+    "last_name": "Васильев",
+    "middle_name": "Геннадьевич",
+    "phone": "+7 (932) 019-43-55",
+    "position": "Инсталлятор",
+    "personnel_number": "660673"
+  },
+  "ST-040": {
+    "first_name": "Наталья",
+    "last_name": "Миронова",
+    "middle_name": "Павловна",
+    "phone": "+7 (912) 026-62-25",
+    "position": "Инсталлятор",
+    "personnel_number": "660693"
+  }
+}

@@ -1,0 +1,23 @@
+[project]
+name = "rostelecom-dispatch-backend"
+version = "0.1.0"
+description = "Каркас API умной диспетчеризации выездных бригад (спецификация data/api_spec.yaml)"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.162.7",
+    "uvicorn==0.54.0",
+    "pydantic==2.14.3",
+    "pyvrp==0.14.1",
+    "numpy==2.5.4",
+    "psycopg[binary,pool]==3.3.9",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest==9.2.0",
+    "httpx==0.28.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

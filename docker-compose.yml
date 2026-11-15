@@ -1,0 +1,88 @@
+# Запуск: docker compose up --build
+# api  — REST API решения по спецификации data/api_spec.yaml, порт 8080 (его опрашивает оркестратор).
+# web  — интерфейс диспетчера (nginx), http://localhost:3000, проксирует /api и /ui на api.
+# db  — PostgreSQL-журнал истории (необязательный: api работает и без него), наружу не публикуется.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: "${POSTGRES_DB:-dispatch}"
+      POSTGRES_USER: "${POSTGRES_USER:-dispatch}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-dispatch}"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    image: rostelecom-dispatch-api:local
+    ports:
+      - "8080:8080"
+    environment:
+      TEAM_NAME: "${TEAM_NAME:-непалиндром}"
+      PLANNER: "${PLANNER:-pyvrp}"
+      PLANNER_DAY_BUDGET_SEC: "${PLANNER_DAY_BUDGET_SEC:-60}"
+      UI_PLAN_BUDGET_SEC: "${UI_PLAN_BUDGET_SEC:-15}"
+      TRAFFIC_FACTORS: "${TRAFFIC_FACTORS:-off}"
+      JOINT_ORDERS: "${JOINT_ORDERS:-off}"
+      # CORS для веб-клиента (через запятую; пусто = список dev-адресов по умолчанию, "*" не включаем)
+      CORS_ORIGINS: "${CORS_ORIGINS:-}"
+      # Каталог данных для загрузки справочников и служебных скриптов (в образ не копируется)
+      UI_DATA_DIR: /data/synth
+      # Справочник сотрудников с ФИО (/ui/directory/staff): data/synth смонтирован только для чтения
+      STAFF_DIRECTORY_FILE: /state/staff_directory.json
+      RUNTIME_SETTINGS_FILE: /state/runtime_settings.json
+      # Доступ и роли (/ui/*; /api/v1 остаётся открытым). По умолчанию для проверки включены общие учётные записи
+      # (диспетчер demo-dispatcher, пароль demo). Для своих паролей задайте их в .env (см. .env.example и README).
+      AUTH_ENABLED: "${AUTH_ENABLED:-on}"
+      AUTH_SECRET: "${AUTH_SECRET:-}"
+      AUTH_ACCOUNTS_FILE: /state/auth_accounts.json
+      DISPATCHER_LOGIN: "${DISPATCHER_LOGIN:-dispatcher}"
+      DISPATCHER_PASSWORD: "${DISPATCHER_PASSWORD:-demo}"
+      DEMO_ACCOUNTS: "${DEMO_ACCOUNTS:-on}"
+      DEMO_PASSWORD: "${DEMO_PASSWORD:-demo}"
+      # Необязательная защита /api/v1 ключом (заголовок X-API-Key); пусто = выключена, как требует спецификация
+      API_KEY: "${API_KEY:-}"
+      # Журнал истории; пароль с символами @ : / # нужно url-кодировать
+      DATABASE_URL: "postgresql://${POSTGRES_USER:-dispatch}:${POSTGRES_PASSWORD:-dispatch}@db:5432/${POSTGRES_DB:-dispatch}"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      # Если data/synth нет, Docker создаст пустой каталог: API работает, не работает только загрузка справочников из каталога
+      - ./data/synth:/data/synth:ro
+      - uistate:/state
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import sys, urllib.request; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8080/api/v1/health', timeout=3).status == 200 else 1)"
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 120s
+
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: rostelecom-dispatch-web:local
+    ports:
+      - "3000:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  uistate:

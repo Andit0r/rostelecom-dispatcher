@@ -1,0 +1,272 @@
+/* Панель «Сценарии». Значения — через токены theme/tokens.css. */
+
+.sc {
+  padding: var(--atmr-spacing-3x) var(--atmr-spacing-4x) var(--atmr-spacing-4x);
+  display: grid;
+  align-content: start;
+  gap: var(--atmr-spacing-4x);
+}
+.sc-note,
+.sc-hint,
+.sc-foot,
+.sc-empty {
+  font: var(--atmr-font-description-m);
+  color: var(--atmr-text-secondary);
+}
+.sc-hint {
+  flex: 1 1 220px;
+  max-width: 52ch;
+}
+.sc-foot {
+  color: var(--atmr-text-tertiary);
+}
+
+/* ---- секция */
+.sc-sec {
+  display: grid;
+  gap: var(--atmr-spacing-3x);
+  padding-top: var(--atmr-spacing-3x);
+  border-top: var(--atmr-border-width-s) solid var(--atmr-border-default);
+}
+.sc-sec__head {
+  display: grid;
+  gap: 2px;
+}
+.sc-sec__head h3 {
+  font: var(--atmr-font-heading-h5);
+}
+.sc-sec__q {
+  font: var(--atmr-font-body-s);
+  color: var(--atmr-text-secondary);
+}
+
+/* ---- управление */
+.sc-controls {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--atmr-spacing-3x);
+}
+.sc-field {
+  display: grid;
+  gap: var(--atmr-spacing-1x);
+}
+.sc-field .select {
+  min-width: 200px;
+  max-width: 260px;
+}
+.sc-label {
+  font: var(--atmr-font-description-m);
+  color: var(--atmr-text-tertiary);
+}
+.sc-stepper {
+  display: inline-flex;
+  height: 32px;
+  border: var(--atmr-border-width-s) solid var(--atmr-border-default);
+  border-radius: var(--atmr-border-radius-s);
+  background: var(--atmr-bg-surface1);
+  overflow: hidden;
+}
+.sc-stepper button {
+  width: 30px;
+  border: 0;
+  background: var(--atmr-bg-surface2);
+  color: var(--atmr-accent);
+  font: 600 16px/1 var(--atmr-font-family);
+  cursor: pointer;
+}
+.sc-stepper button:hover:not(:disabled) {
+  background: var(--atmr-accent-muted);
+}
+.sc-stepper button:disabled {
+  color: var(--atmr-text-tertiary);
+  cursor: default;
+}
+.sc-stepper input {
+  width: 40px;
+  border: 0;
+  border-inline: var(--atmr-border-width-s) solid var(--atmr-border-default);
+  text-align: center;
+  font-weight: 600;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.sc-stepper input::-webkit-inner-spin-button,
+.sc-stepper input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ---- индикатор расчёта */
+.sc-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--atmr-spacing-3x);
+}
+.sc-progress__bar {
+  flex: 1 1 auto;
+  height: 4px;
+  border-radius: var(--atmr-border-radius-full);
+  background: var(--atmr-bg-surface3);
+  overflow: hidden;
+}
+.sc-progress__bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--atmr-accent);
+  transition: width 0.2s linear;
+}
+.sc-progress__text {
+  font: var(--atmr-font-description-m);
+  color: var(--atmr-text-secondary);
+  white-space: nowrap;
+}
+.sc-error {
+  padding: var(--atmr-spacing-2x) var(--atmr-spacing-3x);
+  border-radius: var(--atmr-border-radius-s);
+  background: var(--atmr-status-error-muted);
+  color: var(--atmr-status-error);
+  font: var(--atmr-font-body-s);
+}
+
+/* ---- результат */
+.sc-result {
+  display: grid;
+  gap: var(--atmr-spacing-2x);
+  transition: opacity 0.15s;
+}
+.sc-result.is-stale {
+  opacity: 0.45;
+}
+.sc-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--atmr-spacing-2x);
+  font: var(--atmr-font-body-s);
+  color: var(--atmr-text-secondary);
+}
+.sc-meta b {
+  color: var(--atmr-text-primary);
+  font-weight: 600;
+}
+.sc-removed li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--atmr-spacing-1x);
+  background: var(--atmr-status-neutral-muted);
+}
+.sc-removed .sub {
+  display: inline;
+}
+.sc-h4 {
+  margin: var(--atmr-spacing-2x) 0 0;
+  font: 600 13px/18px var(--atmr-font-family);
+}
+.sc-h4 .num {
+  color: var(--atmr-text-tertiary);
+  font-weight: 500;
+}
+
+/* ---- таблицы «база → сценарий» */
+.sc-table {
+  width: 100%;
+  max-width: 560px;
+  border-collapse: collapse;
+  font: var(--atmr-font-body-s);
+}
+.sc-table th {
+  padding: 4px var(--atmr-spacing-2x);
+  font: 500 11px/14px var(--atmr-font-family);
+  color: var(--atmr-text-tertiary);
+  text-align: left;
+  border-bottom: var(--atmr-border-width-s) solid var(--atmr-border-default);
+}
+.sc-table td {
+  padding: 4px var(--atmr-spacing-2x);
+  border-bottom: var(--atmr-border-width-s) solid var(--atmr-bg-surface3);
+}
+.sc-table th:first-child,
+.sc-table td:first-child {
+  padding-left: 0;
+}
+.sc-num {
+  text-align: right !important;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.sc-strong {
+  font-weight: 600;
+}
+.sc-muted {
+  color: var(--atmr-text-tertiary);
+}
+.sc-sub td:first-child {
+  padding-left: var(--atmr-spacing-4x);
+  color: var(--atmr-text-secondary);
+}
+.sc-sub td {
+  font: var(--atmr-font-description-m);
+}
+.sc-d {
+  font-weight: 600;
+}
+.sc-d--good {
+  color: var(--atmr-status-success);
+}
+.sc-d--bad {
+  color: var(--atmr-status-error);
+}
+.sc-d--zero {
+  color: var(--atmr-text-tertiary);
+  font-weight: 400;
+}
+.sc-group td {
+  padding-top: var(--atmr-spacing-2x);
+  font-weight: 600;
+  border-bottom-color: var(--atmr-border-default);
+}
+.sc-group .sub {
+  display: inline;
+  margin-left: var(--atmr-spacing-2x);
+  font-weight: 400;
+}
+.sc-over {
+  color: var(--atmr-status-error);
+}
+
+/* ---- пострадавшие наряды */
+.sc-affected {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  border-top: var(--atmr-border-width-s) solid var(--atmr-bg-surface3);
+}
+.sc-affected li {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr) max-content;
+  align-items: center;
+  gap: var(--atmr-spacing-3x);
+  padding: 6px var(--atmr-spacing-2x);
+  border-bottom: var(--atmr-border-width-s) solid var(--atmr-bg-surface3);
+  border-left: 3px solid transparent;
+  font: var(--atmr-font-body-s);
+  cursor: pointer;
+}
+.sc-affected li:hover {
+  background: var(--atmr-bg-surface2);
+}
+.sc-affected li.is-selected {
+  background: var(--atmr-accent-muted);
+  border-left-color: var(--atmr-accent);
+}
+.sc-affected__what {
+  min-width: 0;
+}
+.sc-affected__what .sub {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

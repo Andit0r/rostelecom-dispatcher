@@ -1,0 +1,113 @@
+/*
+ * Токены интерфейса в именах дизайн-системы Атомаро (--atmr-*).
+ * Тема: rostelecom-purple-light (класс .Theme_root_rtk_purple_light, см. Storybook «Welcome/Themes»).
+ *
+ * Имена, подтверждённые документацией Atomaro (MCP): --atmr-bg-surface1, --atmr-bg-surface3,
+ * --atmr-accent-muted, --atmr-border-radius-s, --atmr-border-radius-xs, --atmr-spacing-2x;
+ * варианты типографики heading-h1..h5, body-s/m/l, description-s/m/l; шрифт Rostelecom Basis.
+ * ЗНАЧЕНИЯ в документации не опубликованы (страницы токенов рендерят их из пакета @atomaro/themes),
+ * поэтому значения ниже — приближение к фирменному стилю. При подключении
+ * @atomaro/themes/rostelecom-purple-light.css этот файл удаляется: имена совпадают
+ * там, где они подтверждены; прочие (помечены «≈») надо сверить с пакетом.
+ */
+
+.Theme_root_rtk_purple_light,
+:root {
+  /* ---- цвет: акцент (фиолетовый) и бренд-второй (оранжевый) */
+  --atmr-accent: #7700ff;              /* ≈ фирменный фиолетовый Ростелекома */
+  --atmr-accent-hover: #6200d4;        /* ≈ */
+  --atmr-accent-muted: #efe5ff;        /* имя из документации, значение ≈ */
+  --atmr-accent-on: #ffffff;           /* ≈ текст на акценте */
+  --atmr-brand-orange: #ff4f12;        /* ≈ фирменный оранжевый Ростелекома */
+  --atmr-brand-orange-muted: #ffeadf;  /* ≈ */
+
+  /* ---- поверхности */
+  --atmr-bg-page: #f3f2f7;             /* ≈ */
+  --atmr-bg-surface1: #ffffff;         /* имя из документации, значение ≈ */
+  --atmr-bg-surface2: #f7f6fb;         /* ≈ */
+  --atmr-bg-surface3: #ecebf2;         /* имя из документации, значение ≈ */
+
+  /* ---- текст */
+  --atmr-text-primary: #1f1d2b;        /* ≈ */
+  --atmr-text-secondary: #5f5b73;      /* ≈ */
+  --atmr-text-tertiary: #8e8aa3;       /* ≈ */
+
+  /* ---- линии */
+  --atmr-border-default: #dedbe8;      /* ≈ */
+  --atmr-border-strong: #c3bfd3;       /* ≈ */
+  --atmr-border-width-s: 1px;          /* ≈ категория Border-width есть в документации */
+
+  /* ---- статусы (Badge colorScheme: error | info | warning | success | neutral) */
+  --atmr-status-error: #e0263c;        /* ≈ */
+  --atmr-status-error-muted: #fde7ea;  /* ≈ */
+  --atmr-status-warning: #e06a00;      /* ≈ */
+  --atmr-status-warning-muted: #fff0e0;/* ≈ */
+  --atmr-status-success: #12925b;      /* ≈ */
+  --atmr-status-success-muted: #e2f5ec;/* ≈ */
+  --atmr-status-info: #2f6fe0;         /* ≈ */
+  --atmr-status-info-muted: #e6eefc;   /* ≈ */
+  --atmr-status-neutral: #6b6780;      /* ≈ */
+  --atmr-status-neutral-muted: #eeedf3;/* ≈ */
+
+  /* ---- маркеры нарядов на карте (в Атомаро нет, свои) */
+  --atmr-map-pgp: #f0a000;             /* ≈ янтарный ПГП, отличим от оранжевого риска */
+  --atmr-map-late: #ff3b1f;            /* ≈ красно-оранжевый риск опоздания */
+
+  /* ---- маршруты сотрудников на карте и метка в Ганте (в Атомаро нет, свои).
+         12 различимых на подложке OSM цветов; фиолетовый и оранжевый — фирменные,
+         янтарный ПГП и красный риск опоздания не используются, чтобы не путать с точками. */
+  --atmr-route-01: #7700ff;            /* ≈ фирменный фиолетовый */
+  --atmr-route-02: #0a8fd6;            /* ≈ голубой */
+  --atmr-route-03: #12925b;            /* ≈ зелёный */
+  --atmr-route-04: #d4148c;            /* ≈ маджента */
+  --atmr-route-05: #ff4f12;            /* ≈ фирменный оранжевый */
+  --atmr-route-06: #00a3a3;            /* ≈ бирюзовый */
+  --atmr-route-07: #4b3bd6;            /* ≈ индиго */
+  --atmr-route-08: #8a5a00;            /* ≈ коричневый */
+  --atmr-route-09: #7f9c00;            /* ≈ оливковый */
+  --atmr-route-10: #b05cff;            /* ≈ лавандовый */
+  --atmr-route-11: #5c6f84;            /* ≈ сланцевый */
+  --atmr-route-12: #1f3f8f;            /* ≈ тёмно-синий */
+
+  /* ---- диаграмма Ганта (свои, производные от статусных) */
+  --atmr-gantt-shift: #faf9fd;         /* ≈ фон рабочего времени смены */
+  --atmr-gantt-restock: #2f6fe0;       /* ≈ = status-info */
+  --atmr-gantt-restock-muted: #d6e3fb; /* ≈ */
+
+  /* ---- окно «Статистика» (свои). Работа/дорога/перерыв проверены валидатором палитры
+         (CVD ΔE ≥ 13 между соседями); простой — пустой трек, без цвета. */
+  --atmr-stat-work: #7700ff;           /* ≈ = accent */
+  --atmr-stat-road: #0a8fd6;           /* ≈ = route-02 */
+  --atmr-stat-break: #c08a1e;          /* ≈ охра, не статусный оранжевый */
+  --atmr-stat-idle: #ecebf2;           /* ≈ = bg-surface3 */
+  --atmr-stat-line: #7700ff;           /* ≈ линии динамики */
+
+  /* ---- отступы: шаг 4px (имя --atmr-spacing-2x подтверждено) */
+  --atmr-spacing-0_5x: 2px;
+  --atmr-spacing-1x: 4px;
+  --atmr-spacing-2x: 8px;
+  --atmr-spacing-3x: 12px;
+  --atmr-spacing-4x: 16px;
+  --atmr-spacing-5x: 20px;
+  --atmr-spacing-6x: 24px;
+
+  /* ---- радиусы (имена -xs и -s подтверждены) */
+  --atmr-border-radius-xs: 4px;
+  --atmr-border-radius-s: 8px;
+  --atmr-border-radius-m: 12px;        /* ≈ */
+  --atmr-border-radius-full: 999px;    /* ≈ */
+
+  /* ---- тени (категория Shadow есть, имена не опубликованы) */
+  --atmr-shadow-s: 0 1px 2px rgba(31, 29, 43, 0.06), 0 0 0 1px rgba(31, 29, 43, 0.04); /* ≈ */
+  --atmr-shadow-m: 0 4px 16px rgba(56, 20, 120, 0.10);                                  /* ≈ */
+
+  /* ---- типографика: Rostelecom Basis в документации; запасной — Golos Text (Google Fonts) */
+  --atmr-font-family: 'Rostelecom Basis', 'Golos Text', 'Segoe UI', system-ui, sans-serif;
+  --atmr-font-heading-h4: 600 20px/28px var(--atmr-font-family);  /* ≈ */
+  --atmr-font-heading-h5: 600 16px/24px var(--atmr-font-family);  /* ≈ */
+  --atmr-font-body-m: 400 14px/20px var(--atmr-font-family);      /* ≈ */
+  --atmr-font-body-s: 400 13px/18px var(--atmr-font-family);      /* ≈ */
+  --atmr-font-description-m: 400 12px/16px var(--atmr-font-family); /* ≈ */
+  --atmr-font-description-s: 400 11px/14px var(--atmr-font-family); /* ≈ */
+  --atmr-font-display-s: 600 26px/30px var(--atmr-font-family);   /* ≈ для цифр KPI */
+}

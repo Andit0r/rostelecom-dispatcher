@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+backend/.venv/
+
+# Node / Vite / TypeScript
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.vite/
+*.tsbuildinfo
+
+# Сгенерированные отчёты симулятора, логи и временные файлы
+out/
+*.log
+*.tmp
+vite.tmp*
+
+# Секреты и локальные переменные окружения (шаблон — .env.example)
+.env
+.env.*
+!.env.example
+
+# Runtime-состояние, которое создаёт приложение при работе (не коммитим)
+# Справочник сотрудников с ФИО: генерируется при первом запуске и правится из интерфейса
+data/synth/staff_directory.json
+data/synth/auth_accounts.json
+data/synth/auth_secret.key
+data/synth/runtime_settings.json
+
+# Сгенерированные выгрузки кода для ИИ (устаревают, пересоздаются repomix)
+docs/repomix-*.md
+
+# IDE и служебные файлы ОС
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# data/synth (включая travel_matrix.json, ~17 МБ) хранится в репозитории: сайт и демо работают после docker compose up без доп. шагов.
+# Перегенерировать: python tools/synth/generate.py

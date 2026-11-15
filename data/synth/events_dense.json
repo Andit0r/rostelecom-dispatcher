@@ -1,0 +1,2558 @@
+{
+  "date": "2026-11-16",
+  "now": "2026-11-16T08:30:00+05:00",
+  "events": [
+    {
+      "event_id": "EV-20261116-0001",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T08:33:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0152",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00656",
+        "address": "г. Екатеринбург, ул. Шейнкмана, 100",
+        "lat": 56.822094,
+        "lon": 60.479768,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0091",
+        "registered_at": "2026-11-16T08:33:00+05:00",
+        "slot": {
+          "start": "2026-11-16T11:00:00+05:00",
+          "end": "2026-11-16T13:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T13:00:00+05:00",
+        "deadline": "2026-11-16T20:33:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261111-0076"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0002",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T08:46:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0068",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00942",
+        "address": "г. Екатеринбург, ул. Фрунзе, 26",
+        "lat": 56.905688,
+        "lon": 60.556565,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0120",
+        "registered_at": "2026-11-16T08:46:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-16T20:46:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261113-0330"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0003",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T08:49:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0285",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00686",
+        "address": "г. Екатеринбург, ул. Кузнецова, 131",
+        "lat": 56.79555,
+        "lon": 60.476233,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0015",
+        "registered_at": "2026-11-16T08:49:00+05:00",
+        "slot": {
+          "start": "2026-11-16T11:00:00+05:00",
+          "end": "2026-11-16T13:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T13:00:00+05:00",
+        "deadline": "2026-11-17T08:49:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0004",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T08:50:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0130",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00229",
+        "address": "г. Екатеринбург, ул. Кузнецова, 113",
+        "lat": 56.797399,
+        "lon": 60.650697,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0042",
+        "registered_at": "2026-11-16T08:50:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-16T20:50:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261111-0234"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0005",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T08:59:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0115",
+        "work_type_code": "DEGRADATION",
+        "technology": "DOCSIS",
+        "building_id": "B-00228",
+        "address": "г. Екатеринбург, ул. Кузнецова, 23",
+        "lat": 56.805789,
+        "lon": 60.742168,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0113",
+        "registered_at": "2026-11-16T08:59:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-18T08:59:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0006",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T09:00:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0007",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T09:01:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0283",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00383",
+        "address": "г. Екатеринбург, ул. Кузнецова, 6",
+        "lat": 56.853737,
+        "lon": 60.603809,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0066",
+        "registered_at": "2026-11-16T09:01:00+05:00",
+        "slot": {
+          "start": "2026-11-16T11:00:00+05:00",
+          "end": "2026-11-16T13:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T13:00:00+05:00",
+        "deadline": "2026-11-17T09:01:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0008",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T09:05:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0035",
+        "work_type_code": "DISMANTLE",
+        "technology": "PON",
+        "building_id": "B-00297",
+        "address": "г. Екатеринбург, ул. Восточная, 53",
+        "lat": 56.779761,
+        "lon": 60.561839,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0098",
+        "registered_at": "2026-11-16T09:05:00+05:00",
+        "slot": {
+          "start": "2026-11-16T11:00:00+05:00",
+          "end": "2026-11-16T13:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T13:00:00+05:00",
+        "deadline": "2026-11-23T09:05:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0009",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T09:14:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0217",
+        "work_type_code": "REPAIR",
+        "technology": "DOCSIS",
+        "building_id": "B-00038",
+        "address": "г. Екатеринбург, ул. Тверитина, 1",
+        "lat": 56.842499,
+        "lon": 60.60787,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0103",
+        "registered_at": "2026-11-16T09:14:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T09:14:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0010",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T09:18:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0271",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00325",
+        "address": "г. Екатеринбург, ул. Посадская, 84",
+        "lat": 56.793252,
+        "lon": 60.65125,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0011",
+        "registered_at": "2026-11-16T09:18:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T09:18:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0011",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T09:19:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0317",
+        "work_type_code": "DEGRADATION",
+        "technology": "PON",
+        "building_id": "B-00468",
+        "address": "г. Екатеринбург, ул. Восточная, 26",
+        "lat": 56.854199,
+        "lon": 60.45,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0078",
+        "registered_at": "2026-11-16T09:19:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-18T09:19:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0012",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T09:21:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0252",
+        "work_type_code": "INST_FTTB_MKD",
+        "technology": "FTTB",
+        "building_id": "B-00025",
+        "address": "г. Екатеринбург, ул. Сибирский тракт, 15",
+        "lat": 56.805509,
+        "lon": 60.576703,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0138",
+        "registered_at": "2026-11-16T09:21:00+05:00",
+        "slot": {
+          "start": "2026-11-16T11:00:00+05:00",
+          "end": "2026-11-16T13:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T11:10:00+05:00",
+        "deadline": "2026-11-19T09:21:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0013",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T09:21:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0340",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00253",
+        "address": "г. Екатеринбург, ул. Тверитина, 132",
+        "lat": 56.812326,
+        "lon": 60.571445,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0138",
+        "registered_at": "2026-11-16T09:21:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T09:21:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0014",
+      "type": "ORDER_CANCELLED",
+      "timestamp": "2026-11-16T09:30:00+05:00",
+      "order_id": "ORD-20261116-0073",
+      "reason": "NOT_CONFIRMED"
+    },
+    {
+      "event_id": "EV-20261116-0015",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T09:30:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0016",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T09:31:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0333",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00627",
+        "address": "г. Екатеринбург, ул. Фрунзе, 52",
+        "lat": 56.920574,
+        "lon": 60.725293,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0056",
+        "registered_at": "2026-11-16T09:31:00+05:00",
+        "slot": {
+          "start": "2026-11-16T13:00:00+05:00",
+          "end": "2026-11-16T15:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T15:00:00+05:00",
+        "deadline": "2026-11-17T09:31:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0017",
+      "type": "ORDER_CANCELLED",
+      "timestamp": "2026-11-16T09:39:00+05:00",
+      "order_id": "ORD-20261116-0115",
+      "reason": "NOT_CONFIRMED"
+    },
+    {
+      "event_id": "EV-20261116-0018",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T09:53:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0029",
+        "work_type_code": "SURVEY_PRIVATE",
+        "technology": "DOCSIS",
+        "building_id": "B-00333",
+        "address": "г. Екатеринбург, ул. Учителей, 54",
+        "lat": 56.804919,
+        "lon": 60.605482,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0122",
+        "registered_at": "2026-11-16T09:53:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-18T09:53:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0019",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T10:00:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0020",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T10:06:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0075",
+        "work_type_code": "REPAIR",
+        "technology": "XDSL",
+        "building_id": "B-00246",
+        "address": "г. Екатеринбург, ул. Ключевская, 109",
+        "lat": 56.79919,
+        "lon": 60.63917,
+        "building_type": "PRIVATE",
+        "requires_height": true,
+        "access_node_id": "AN-0060",
+        "registered_at": "2026-11-16T10:06:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-16T22:06:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261113-0032"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0021",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T10:08:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0129",
+        "work_type_code": "REPAIR",
+        "technology": "XDSL",
+        "building_id": "B-00714",
+        "address": "г. Екатеринбург, ул. Бардина, 44",
+        "lat": 56.864235,
+        "lon": 60.533205,
+        "building_type": "PRIVATE",
+        "requires_height": true,
+        "access_node_id": "AN-0117",
+        "registered_at": "2026-11-16T10:08:00+05:00",
+        "slot": {
+          "start": "2026-11-16T11:00:00+05:00",
+          "end": "2026-11-16T13:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T13:00:00+05:00",
+        "deadline": "2026-11-17T10:08:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0022",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T10:17:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0188",
+        "work_type_code": "DEGRADATION",
+        "technology": "PON",
+        "building_id": "B-01141",
+        "address": "г. Екатеринбург, ул. Фрунзе, 50",
+        "lat": 56.880538,
+        "lon": 60.625845,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0012",
+        "registered_at": "2026-11-16T10:17:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-18T10:17:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0023",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T10:25:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0336",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00800",
+        "address": "г. Екатеринбург, ул. Водников, 101",
+        "lat": 56.819279,
+        "lon": 60.547847,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0097",
+        "registered_at": "2026-11-16T10:25:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T10:25:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0024",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T10:30:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0251",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00504",
+        "address": "г. Екатеринбург, ул. Белинского, 124",
+        "lat": 56.800936,
+        "lon": 60.716173,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0039",
+        "registered_at": "2026-11-16T10:30:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T10:30:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0025",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T10:30:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0026",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T10:33:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0091",
+        "work_type_code": "DEGRADATION",
+        "technology": "XDSL",
+        "building_id": "B-00335",
+        "address": "г. Екатеринбург, ул. Вулканическая, 85",
+        "lat": 56.93,
+        "lon": 60.714552,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0021",
+        "registered_at": "2026-11-16T10:33:00+05:00",
+        "slot": {
+          "start": "2026-11-16T13:00:00+05:00",
+          "end": "2026-11-16T15:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T15:00:00+05:00",
+        "deadline": "2026-11-18T10:33:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0027",
+      "type": "STAFF_UNAVAILABLE",
+      "timestamp": "2026-11-16T10:40:00+05:00",
+      "staff_id": "ST-002",
+      "until": null,
+      "reason": "VEHICLE_BREAKDOWN"
+    },
+    {
+      "event_id": "EV-20261116-0028",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T10:42:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0027",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00194",
+        "address": "г. Екатеринбург, ул. Громова, 40",
+        "lat": 56.867584,
+        "lon": 60.45,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0055",
+        "registered_at": "2026-11-16T10:42:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T10:42:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0029",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T10:50:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0242",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00739",
+        "address": "г. Екатеринбург, ул. Фрунзе, 56",
+        "lat": 56.889643,
+        "lon": 60.45,
+        "building_type": "PRIVATE",
+        "requires_height": true,
+        "access_node_id": "AN-0084",
+        "registered_at": "2026-11-16T10:50:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-16T22:50:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261113-0237"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0030",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T10:53:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0186",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00205",
+        "address": "г. Екатеринбург, ул. Белинского, 37",
+        "lat": 56.800097,
+        "lon": 60.6902,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0039",
+        "registered_at": "2026-11-16T10:53:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T10:53:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0031",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T10:57:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0001",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-01120",
+        "address": "г. Екатеринбург, ул. Ключевская, 132",
+        "lat": 56.812368,
+        "lon": 60.515617,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0135",
+        "registered_at": "2026-11-16T10:57:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T10:57:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0032",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T11:00:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0033",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:03:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0002",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00220",
+        "address": "г. Екатеринбург, ул. Ключевская, 21",
+        "lat": 56.803119,
+        "lon": 60.515046,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0135",
+        "registered_at": "2026-11-16T11:03:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T11:03:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0034",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:07:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0154",
+        "work_type_code": "INST_PON_MKD",
+        "technology": "PON",
+        "building_id": "B-00348",
+        "address": "г. Екатеринбург, ул. Громова, 84",
+        "lat": 56.93,
+        "lon": 60.762989,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0017",
+        "registered_at": "2026-11-16T11:07:00+05:00",
+        "slot": {
+          "start": "2026-11-16T13:00:00+05:00",
+          "end": "2026-11-16T15:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T13:10:00+05:00",
+        "deadline": "2026-11-19T11:07:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 1
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0035",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:11:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0079",
+        "work_type_code": "DEGRADATION",
+        "technology": "XDSL",
+        "building_id": "B-01176",
+        "address": "г. Екатеринбург, ул. Кузнецова, 79",
+        "lat": 56.878863,
+        "lon": 60.537372,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0003",
+        "registered_at": "2026-11-16T11:11:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-18T11:11:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0036",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:11:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0138",
+        "work_type_code": "REPAIR",
+        "technology": "DOCSIS",
+        "building_id": "B-00359",
+        "address": "г. Екатеринбург, ул. Ключевская, 95",
+        "lat": 56.768307,
+        "lon": 60.796611,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0113",
+        "registered_at": "2026-11-16T11:11:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T11:11:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0037",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:11:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0176",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00168",
+        "address": "г. Екатеринбург, ул. Народной Воли, 64",
+        "lat": 56.883832,
+        "lon": 60.549868,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0037",
+        "registered_at": "2026-11-16T11:11:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T11:11:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0038",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:15:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0092",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00683",
+        "address": "г. Екатеринбург, ул. Бакинских Комиссаров, 136",
+        "lat": 56.84115,
+        "lon": 60.607699,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0070",
+        "registered_at": "2026-11-16T11:15:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-16T23:15:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261111-0006"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0039",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:16:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0003",
+        "work_type_code": "DEGRADATION",
+        "technology": "PON",
+        "building_id": "B-00631",
+        "address": "г. Екатеринбург, ул. Декабристов, 84",
+        "lat": 56.796572,
+        "lon": 60.509021,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0135",
+        "registered_at": "2026-11-16T11:16:00+05:00",
+        "slot": {
+          "start": "2026-11-16T19:00:00+05:00",
+          "end": "2026-11-16T21:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T21:00:00+05:00",
+        "deadline": "2026-11-18T11:16:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0040",
+      "type": "STAFF_UNAVAILABLE",
+      "timestamp": "2026-11-16T11:20:00+05:00",
+      "staff_id": "ST-007",
+      "until": "2026-11-16T14:30:00+05:00",
+      "reason": "OTHER"
+    },
+    {
+      "event_id": "EV-20261116-0041",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T11:30:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0042",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:32:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0098",
+        "work_type_code": "REPAIR",
+        "technology": "XDSL",
+        "building_id": "B-00222",
+        "address": "г. Екатеринбург, ул. Сибирский тракт, 1",
+        "lat": 56.789875,
+        "lon": 60.601337,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0060",
+        "registered_at": "2026-11-16T11:32:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-16T23:32:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261110-0333"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0043",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:38:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0208",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00341",
+        "address": "г. Екатеринбург, ул. Вайнера, 46",
+        "lat": 56.778389,
+        "lon": 60.609601,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0069",
+        "registered_at": "2026-11-16T11:38:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T11:38:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0044",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:39:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0004",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00913",
+        "address": "г. Екатеринбург, ул. Вайнера, 106",
+        "lat": 56.910949,
+        "lon": 60.595876,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0099",
+        "registered_at": "2026-11-16T11:39:00+05:00",
+        "slot": {
+          "start": "2026-11-16T13:00:00+05:00",
+          "end": "2026-11-16T15:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T15:00:00+05:00",
+        "deadline": "2026-11-17T11:39:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0045",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:39:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0153",
+        "work_type_code": "SURVEY_PRIVATE",
+        "technology": "DOCSIS",
+        "building_id": "B-01155",
+        "address": "г. Екатеринбург, ул. Фрунзе, 33",
+        "lat": 56.874046,
+        "lon": 60.547336,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0079",
+        "registered_at": "2026-11-16T11:39:00+05:00",
+        "slot": {
+          "start": "2026-11-16T13:00:00+05:00",
+          "end": "2026-11-16T15:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T15:00:00+05:00",
+        "deadline": "2026-11-18T11:39:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0046",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:41:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0269",
+        "work_type_code": "REPAIR",
+        "technology": "XDSL",
+        "building_id": "B-00222",
+        "address": "г. Екатеринбург, ул. Сибирский тракт, 1",
+        "lat": 56.789875,
+        "lon": 60.601337,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0060",
+        "registered_at": "2026-11-16T11:41:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-16T23:41:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261111-0266"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0047",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:44:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0197",
+        "work_type_code": "REPAIR",
+        "technology": "XDSL",
+        "building_id": "B-00993",
+        "address": "г. Екатеринбург, ул. Бакинских Комиссаров, 12",
+        "lat": 56.841149,
+        "lon": 60.462051,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0130",
+        "registered_at": "2026-11-16T11:44:00+05:00",
+        "slot": {
+          "start": "2026-11-16T13:00:00+05:00",
+          "end": "2026-11-16T15:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T15:00:00+05:00",
+        "deadline": "2026-11-17T11:44:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0048",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:45:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0033",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00731",
+        "address": "г. Екатеринбург, ул. Щорса, 135",
+        "lat": 56.882124,
+        "lon": 60.659779,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0012",
+        "registered_at": "2026-11-16T11:45:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T11:45:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0049",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:46:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0005",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00478",
+        "address": "г. Екатеринбург, ул. Громова, 31",
+        "lat": 56.910206,
+        "lon": 60.612389,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0099",
+        "registered_at": "2026-11-16T11:46:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T11:46:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0050",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:46:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0038",
+        "work_type_code": "DISMANTLE",
+        "technology": "DOCSIS",
+        "building_id": "B-00771",
+        "address": "г. Екатеринбург, ул. Декабристов, 77",
+        "lat": 56.891916,
+        "lon": 60.620703,
+        "building_type": "PRIVATE",
+        "requires_height": true,
+        "access_node_id": "AN-0089",
+        "registered_at": "2026-11-16T11:46:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-23T11:46:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0051",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:49:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0006",
+        "work_type_code": "DEGRADATION",
+        "technology": "FTTB",
+        "building_id": "B-00224",
+        "address": "г. Екатеринбург, ул. Уральская, 48",
+        "lat": 56.910316,
+        "lon": 60.616209,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0099",
+        "registered_at": "2026-11-16T11:49:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-18T11:49:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0052",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T11:51:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0262",
+        "work_type_code": "SURVEY_PRIVATE",
+        "technology": "XDSL",
+        "building_id": "B-00365",
+        "address": "г. Екатеринбург, ул. Водников, 63",
+        "lat": 56.85552,
+        "lon": 60.72605,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0041",
+        "registered_at": "2026-11-16T11:51:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-18T11:51:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0053",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T12:00:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0054",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T12:04:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0165",
+        "work_type_code": "SURVEY_PRIVATE",
+        "technology": "PON",
+        "building_id": "B-01249",
+        "address": "г. Екатеринбург, ул. Водников, 101",
+        "lat": 56.778175,
+        "lon": 60.527534,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0053",
+        "registered_at": "2026-11-16T12:04:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-18T12:04:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0055",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T12:09:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0013",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00523",
+        "address": "г. Екатеринбург, ул. Студенческая, 59",
+        "lat": 56.89498,
+        "lon": 60.560765,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0120",
+        "registered_at": "2026-11-16T12:09:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T00:09:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261109-0345"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0056",
+      "type": "ORDER_CANCELLED",
+      "timestamp": "2026-11-16T12:09:00+05:00",
+      "order_id": "ORD-20261116-0006",
+      "reason": "CUSTOMER_REQUEST"
+    },
+    {
+      "event_id": "EV-20261116-0057",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T12:30:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0058",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T12:32:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0231",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-01202",
+        "address": "г. Екатеринбург, ул. Щорса, 99",
+        "lat": 56.916348,
+        "lon": 60.600388,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0110",
+        "registered_at": "2026-11-16T12:32:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T00:32:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261112-0159"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0059",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T12:34:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0141",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00227",
+        "address": "г. Екатеринбург, ул. Тверитина, 97",
+        "lat": 56.841127,
+        "lon": 60.521842,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0085",
+        "registered_at": "2026-11-16T12:34:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T00:34:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261113-0076"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0060",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T12:40:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0104",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00960",
+        "address": "г. Екатеринбург, ул. Учителей, 9",
+        "lat": 56.93,
+        "lon": 60.8,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0056",
+        "registered_at": "2026-11-16T12:40:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T12:40:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0061",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T12:50:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0226",
+        "work_type_code": "REPAIR",
+        "technology": "DOCSIS",
+        "building_id": "B-00921",
+        "address": "г. Екатеринбург, ул. Восточная, 4",
+        "lat": 56.817136,
+        "lon": 60.541303,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0134",
+        "registered_at": "2026-11-16T12:50:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T00:50:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261109-0021"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0062",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T13:00:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0228",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-01205",
+        "address": "г. Екатеринбург, ул. Студенческая, 22",
+        "lat": 56.867566,
+        "lon": 60.559671,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0027",
+        "registered_at": "2026-11-16T13:00:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T13:00:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0063",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T13:00:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0064",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T13:01:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0294",
+        "work_type_code": "REPAIR",
+        "technology": "XDSL",
+        "building_id": "B-00814",
+        "address": "г. Екатеринбург, ул. Посадская, 113",
+        "lat": 56.83943,
+        "lon": 60.596942,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0014",
+        "registered_at": "2026-11-16T13:01:00+05:00",
+        "slot": {
+          "start": "2026-11-16T19:00:00+05:00",
+          "end": "2026-11-16T21:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T21:00:00+05:00",
+        "deadline": "2026-11-17T01:01:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261113-0202"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0065",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T13:03:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0146",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00553",
+        "address": "г. Екатеринбург, ул. Посадская, 71",
+        "lat": 56.887353,
+        "lon": 60.584371,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0127",
+        "registered_at": "2026-11-16T13:03:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T13:03:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0066",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T13:11:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0181",
+        "work_type_code": "REPAIR",
+        "technology": "DOCSIS",
+        "building_id": "B-00127",
+        "address": "г. Екатеринбург, ул. Учителей, 41",
+        "lat": 56.795148,
+        "lon": 60.675178,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0122",
+        "registered_at": "2026-11-16T13:11:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T13:11:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0067",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T13:29:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0150",
+        "work_type_code": "REPAIR",
+        "technology": "DOCSIS",
+        "building_id": "B-01037",
+        "address": "г. Екатеринбург, ул. Бардина, 91",
+        "lat": 56.897339,
+        "lon": 60.576807,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0025",
+        "registered_at": "2026-11-16T13:29:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T01:29:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261113-0095"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0068",
+      "type": "ORDER_CANCELLED",
+      "timestamp": "2026-11-16T13:30:00+05:00",
+      "order_id": "ORD-20261116-0287",
+      "reason": "NOT_CONFIRMED"
+    },
+    {
+      "event_id": "EV-20261116-0069",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T13:30:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0070",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T13:34:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0025",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00647",
+        "address": "г. Екатеринбург, ул. Щорса, 116",
+        "lat": 56.894613,
+        "lon": 60.574359,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0120",
+        "registered_at": "2026-11-16T13:34:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T01:34:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261109-0358"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0071",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T13:35:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0143",
+        "work_type_code": "INST_FTTB_MKD",
+        "technology": "FTTB",
+        "building_id": "B-00972",
+        "address": "г. Екатеринбург, ул. Водников, 42",
+        "lat": 56.784003,
+        "lon": 60.711239,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0126",
+        "registered_at": "2026-11-16T13:35:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:10:00+05:00",
+        "deadline": "2026-11-19T13:35:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 1
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0072",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T13:46:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0171",
+        "work_type_code": "DEGRADATION",
+        "technology": "DOCSIS",
+        "building_id": "B-00051",
+        "address": "г. Екатеринбург, ул. Учителей, 95",
+        "lat": 56.917381,
+        "lon": 60.560454,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0025",
+        "registered_at": "2026-11-16T13:46:00+05:00",
+        "slot": {
+          "start": "2026-11-16T19:00:00+05:00",
+          "end": "2026-11-16T21:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T21:00:00+05:00",
+        "deadline": "2026-11-18T13:46:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0073",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T13:49:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0221",
+        "work_type_code": "INST_FTTB_MKD",
+        "technology": "FTTB",
+        "building_id": "B-00986",
+        "address": "г. Екатеринбург, ул. Вулканическая, 55",
+        "lat": 56.806228,
+        "lon": 60.708759,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0126",
+        "registered_at": "2026-11-16T13:49:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T15:10:00+05:00",
+        "deadline": "2026-11-19T13:49:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 1
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0074",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T13:55:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0350",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-00348",
+        "address": "г. Екатеринбург, ул. Громова, 84",
+        "lat": 56.93,
+        "lon": 60.762989,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0017",
+        "registered_at": "2026-11-16T13:55:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T01:55:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261113-0317"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0075",
+      "type": "ORDER_CANCELLED",
+      "timestamp": "2026-11-16T14:00:00+05:00",
+      "order_id": "ORD-20261116-0233",
+      "reason": "NOT_CONFIRMED"
+    },
+    {
+      "event_id": "EV-20261116-0076",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T14:00:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0077",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T14:03:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0332",
+        "work_type_code": "REPAIR",
+        "technology": "XDSL",
+        "building_id": "B-00930",
+        "address": "г. Екатеринбург, ул. Блюхера, 68",
+        "lat": 56.832816,
+        "lon": 60.45,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0130",
+        "registered_at": "2026-11-16T14:03:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T02:03:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261110-0338"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0078",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T14:05:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0063",
+        "work_type_code": "DEGRADATION",
+        "technology": "PON",
+        "building_id": "B-01063",
+        "address": "г. Екатеринбург, ул. Учителей, 88",
+        "lat": 56.798147,
+        "lon": 60.770984,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0034",
+        "registered_at": "2026-11-16T14:05:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-18T14:05:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0079",
+      "type": "STAFF_UNAVAILABLE",
+      "timestamp": "2026-11-16T14:05:00+05:00",
+      "staff_id": "ST-036",
+      "until": null,
+      "reason": "ILLNESS"
+    },
+    {
+      "event_id": "EV-20261116-0080",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T14:08:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0010",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00400",
+        "address": "г. Екатеринбург, ул. Белинского, 32",
+        "lat": 56.909319,
+        "lon": 60.640906,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0018",
+        "registered_at": "2026-11-16T14:08:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T14:08:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0081",
+      "type": "ORDER_CANCELLED",
+      "timestamp": "2026-11-16T14:15:00+05:00",
+      "order_id": "ORD-20261116-0178",
+      "reason": "CUSTOMER_REQUEST"
+    },
+    {
+      "event_id": "EV-20261116-0082",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T14:27:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0328",
+        "work_type_code": "DEGRADATION",
+        "technology": "FTTB",
+        "building_id": "B-01062",
+        "address": "г. Екатеринбург, ул. Восточная, 96",
+        "lat": 56.821018,
+        "lon": 60.750386,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0005",
+        "registered_at": "2026-11-16T14:27:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-18T14:27:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0083",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T14:29:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0024",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00797",
+        "address": "г. Екатеринбург, ул. Мамина-Сибиряка, 17",
+        "lat": 56.810935,
+        "lon": 60.552729,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0105",
+        "registered_at": "2026-11-16T14:29:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T14:29:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0084",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T14:29:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0346",
+        "work_type_code": "REPAIR",
+        "technology": "XDSL",
+        "building_id": "B-00835",
+        "address": "г. Екатеринбург, ул. Громова, 107",
+        "lat": 56.91725,
+        "lon": 60.8,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0101",
+        "registered_at": "2026-11-16T14:29:00+05:00",
+        "slot": {
+          "start": "2026-11-16T15:00:00+05:00",
+          "end": "2026-11-16T17:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:00:00+05:00",
+        "deadline": "2026-11-17T02:29:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": true,
+        "previous_order_id": "ORD-20261112-0082"
+      }
+    },
+    {
+      "event_id": "EV-20261116-0085",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T14:30:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0086",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T14:50:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0127",
+        "work_type_code": "ADD_SERVICE",
+        "technology": "PON",
+        "building_id": "B-01151",
+        "address": "г. Екатеринбург, ул. Народной Воли, 107",
+        "lat": 56.899095,
+        "lon": 60.761343,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0140",
+        "registered_at": "2026-11-16T14:50:00+05:00",
+        "slot": {
+          "start": "2026-11-16T19:00:00+05:00",
+          "end": "2026-11-16T21:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T21:00:00+05:00",
+        "deadline": "2026-11-16T21:40:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 1
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0087",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T15:00:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0088",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T15:10:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0077",
+        "work_type_code": "REPAIR",
+        "technology": "PON",
+        "building_id": "B-01234",
+        "address": "г. Екатеринбург, ул. Белинского, 83",
+        "lat": 56.905842,
+        "lon": 60.636914,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0076",
+        "registered_at": "2026-11-16T15:10:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T19:00:00+05:00",
+        "deadline": "2026-11-17T15:10:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0089",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T15:16:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0265",
+        "work_type_code": "INST_FTTB_MKD",
+        "technology": "FTTB",
+        "building_id": "B-00998",
+        "address": "г. Екатеринбург, ул. Громова, 111",
+        "lat": 56.826151,
+        "lon": 60.704628,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0126",
+        "registered_at": "2026-11-16T15:16:00+05:00",
+        "slot": {
+          "start": "2026-11-16T17:00:00+05:00",
+          "end": "2026-11-16T19:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T17:10:00+05:00",
+        "deadline": "2026-11-19T15:16:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 1
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0090",
+      "type": "ORDER_CANCELLED",
+      "timestamp": "2026-11-16T15:30:00+05:00",
+      "order_id": "ORD-20261116-0032",
+      "reason": "NOT_CONFIRMED"
+    },
+    {
+      "event_id": "EV-20261116-0091",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T15:30:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0092",
+      "type": "ORDER_CANCELLED",
+      "timestamp": "2026-11-16T16:00:00+05:00",
+      "order_id": "ORD-20261116-0096",
+      "reason": "NOT_CONFIRMED"
+    },
+    {
+      "event_id": "EV-20261116-0093",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T16:00:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0094",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T16:10:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0149",
+        "work_type_code": "ADD_SERVICE",
+        "technology": "PON",
+        "building_id": "B-01066",
+        "address": "г. Екатеринбург, ул. Шейнкмана, 106",
+        "lat": 56.785659,
+        "lon": 60.565042,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0008",
+        "registered_at": "2026-11-16T16:10:00+05:00",
+        "slot": {
+          "start": "2026-11-16T19:00:00+05:00",
+          "end": "2026-11-16T21:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T21:00:00+05:00",
+        "deadline": "2026-11-16T21:40:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0095",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T16:30:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0096",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T16:40:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0103",
+        "work_type_code": "DEGRADATION",
+        "technology": "DOCSIS",
+        "building_id": "B-00575",
+        "address": "г. Екатеринбург, ул. Посадская, 113",
+        "lat": 56.850238,
+        "lon": 60.614249,
+        "building_type": "PRIVATE",
+        "requires_height": false,
+        "access_node_id": "AN-0103",
+        "registered_at": "2026-11-16T16:40:00+05:00",
+        "slot": {
+          "start": "2026-11-16T19:00:00+05:00",
+          "end": "2026-11-16T21:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T21:00:00+05:00",
+        "deadline": "2026-11-18T16:40:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0097",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T17:00:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0098",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T17:18:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0329",
+        "work_type_code": "SURVEY_PRIVATE",
+        "technology": "PON",
+        "building_id": "B-00918",
+        "address": "г. Екатеринбург, ул. Бебеля, 41",
+        "lat": 56.870819,
+        "lon": 60.590932,
+        "building_type": "PRIVATE",
+        "requires_height": true,
+        "access_node_id": "AN-0065",
+        "registered_at": "2026-11-16T17:18:00+05:00",
+        "slot": {
+          "start": "2026-11-16T19:00:00+05:00",
+          "end": "2026-11-16T21:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T21:00:00+05:00",
+        "deadline": "2026-11-18T17:18:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0099",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T17:27:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0278",
+        "work_type_code": "DEGRADATION",
+        "technology": "PON",
+        "building_id": "B-00145",
+        "address": "г. Екатеринбург, ул. Уральская, 58",
+        "lat": 56.84471,
+        "lon": 60.78569,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0038",
+        "registered_at": "2026-11-16T17:27:00+05:00",
+        "slot": {
+          "start": "2026-11-16T19:00:00+05:00",
+          "end": "2026-11-16T21:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T21:00:00+05:00",
+        "deadline": "2026-11-18T17:27:00+05:00",
+        "required_equipment": {
+          "ONT": 1,
+          "ROUTER": 1,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0100",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T17:30:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0101",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T17:57:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0191",
+        "work_type_code": "SURVEY_PRIVATE",
+        "technology": "PON",
+        "building_id": "B-01093",
+        "address": "г. Екатеринбург, ул. Щорса, 107",
+        "lat": 56.867104,
+        "lon": 60.606651,
+        "building_type": "PRIVATE",
+        "requires_height": true,
+        "access_node_id": "AN-0065",
+        "registered_at": "2026-11-16T17:57:00+05:00",
+        "slot": {
+          "start": "2026-11-16T19:00:00+05:00",
+          "end": "2026-11-16T21:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T21:00:00+05:00",
+        "deadline": "2026-11-18T17:57:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    },
+    {
+      "event_id": "EV-20261116-0102",
+      "type": "TIME_TICK",
+      "timestamp": "2026-11-16T18:00:00+05:00"
+    },
+    {
+      "event_id": "EV-20261116-0103",
+      "type": "NEW_ORDER",
+      "timestamp": "2026-11-16T18:19:00+05:00",
+      "order": {
+        "order_id": "ORD-20261116-0299",
+        "work_type_code": "REPAIR",
+        "technology": "FTTB",
+        "building_id": "B-00191",
+        "address": "г. Екатеринбург, ул. Машиностроителей, 137",
+        "lat": 56.879479,
+        "lon": 60.592861,
+        "building_type": "MKD",
+        "requires_height": false,
+        "access_node_id": "AN-0136",
+        "registered_at": "2026-11-16T18:19:00+05:00",
+        "slot": {
+          "start": "2026-11-16T19:00:00+05:00",
+          "end": "2026-11-16T21:00:00+05:00"
+        },
+        "latest_start": "2026-11-16T21:00:00+05:00",
+        "deadline": "2026-11-17T18:19:00+05:00",
+        "required_equipment": {
+          "ONT": 0,
+          "ROUTER": 0,
+          "STB": 0
+        },
+        "is_repeat": false,
+        "previous_order_id": null
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "trigger_id": "TR-20261116-01",
+      "type": "VISIT_DELAYED",
+      "order_id": "ORD-20261116-0234",
+      "fire_after_start_min": 21,
+      "extra_duration_min": 29,
+      "transferred_to": null
+    },
+    {
+      "trigger_id": "TR-20261116-02",
+      "type": "VISIT_DELAYED",
+      "order_id": "ORD-20261116-0045",
+      "fire_after_start_min": 14,
+      "extra_duration_min": 29,
+      "transferred_to": null
+    },
+    {
+      "trigger_id": "TR-20261116-03",
+      "type": "VISIT_DELAYED",
+      "order_id": "ORD-20261116-0258",
+      "fire_after_start_min": 22,
+      "extra_duration_min": 31,
+      "transferred_to": null
+    },
+    {
+      "trigger_id": "TR-20261116-04",
+      "type": "VISIT_DELAYED",
+      "order_id": "ORD-20261116-0301",
+      "fire_after_start_min": 17,
+      "extra_duration_min": 51,
+      "transferred_to": null
+    },
+    {
+      "trigger_id": "TR-20261116-05",
+      "type": "VISIT_DELAYED",
+      "order_id": "ORD-20261116-0052",
+      "fire_after_start_min": 15,
+      "extra_duration_min": 35,
+      "transferred_to": null
+    },
+    {
+      "trigger_id": "TR-20261116-06",
+      "type": "VISIT_DELAYED",
+      "order_id": "ORD-20261116-0280",
+      "fire_after_start_min": 19,
+      "extra_duration_min": 44,
+      "transferred_to": null
+    },
+    {
+      "trigger_id": "TR-20261116-07",
+      "type": "VISIT_DELAYED",
+      "order_id": "ORD-20261116-0284",
+      "fire_after_start_min": 30,
+      "extra_duration_min": 46,
+      "transferred_to": null
+    },
+    {
+      "trigger_id": "TR-20261116-08",
+      "type": "VISIT_DELAYED",
+      "order_id": "ORD-20261116-0122",
+      "fire_after_start_min": 19,
+      "extra_duration_min": 43,
+      "transferred_to": null
+    },
+    {
+      "trigger_id": "TR-20261116-09",
+      "type": "VISIT_DELAYED",
+      "order_id": "ORD-20261116-0270",
+      "fire_after_start_min": 15,
+      "extra_duration_min": 34,
+      "transferred_to": null
+    },
+    {
+      "trigger_id": "TR-20261116-10",
+      "type": "VISIT_DELAYED",
+      "order_id": "ORD-20261116-0246",
+      "fire_after_start_min": 20,
+      "extra_duration_min": 26,
+      "transferred_to": null
+    },
+    {
+      "trigger_id": "TR-20261116-11",
+      "type": "ORDER_TRANSFERRED",
+      "order_id": "ORD-20261116-0245",
+      "fire_after_start_min": 25,
+      "extra_duration_min": null,
+      "transferred_to": "TRUNK_CABLE"
+    },
+    {
+      "trigger_id": "TR-20261116-12",
+      "type": "ORDER_TRANSFERRED",
+      "order_id": "ORD-20261116-0066",
+      "fire_after_start_min": 39,
+      "extra_duration_min": null,
+      "transferred_to": "TRUNK_CABLE"
+    },
+    {
+      "trigger_id": "TR-20261116-13",
+      "type": "ORDER_TRANSFERRED",
+      "order_id": "ORD-20261116-0156",
+      "fire_after_start_min": 38,
+      "extra_duration_min": null,
+      "transferred_to": "STATION_EQUIPMENT"
+    },
+    {
+      "trigger_id": "TR-20261116-14",
+      "type": "ORDER_TRANSFERRED",
+      "order_id": "ORD-20261116-0351",
+      "fire_after_start_min": 17,
+      "extra_duration_min": null,
+      "transferred_to": "TRUNK_CABLE"
+    }
+  ]
+}

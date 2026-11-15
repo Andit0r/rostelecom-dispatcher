@@ -1,0 +1,17 @@
+# Сборка Docker: контекст — корень репозитория, Dockerfile — backend/Dockerfile
+.git
+.gitignore
+.dockerignore
+docs
+frontend
+tools
+data
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.venv
+**/venv
+**/tests
+**/*.md
+node_modules
+docker-compose.yml

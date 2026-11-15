@@ -1,0 +1,237 @@
+/* Экран входа и смены пароля. Телефон: фирменная полоса сверху, форма ниже.
+   От 860 px: две колонны — фиолетовая панель со схемой маршрута и форма. */
+
+.auth {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--atmr-bg-page);
+  color: var(--atmr-text-primary);
+  font: 400 16px/22px var(--atmr-font-family);
+}
+
+/* ---- фирменная панель */
+.auth__brand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: calc(env(safe-area-inset-top, 0px) + 20px) 16px 20px;
+  background: var(--atmr-accent);
+  color: var(--atmr-accent-on);
+  overflow: hidden;
+}
+.auth__brand-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.auth__logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 4px;
+  object-fit: contain;
+}
+.auth__name {
+  font: 700 20px/24px var(--atmr-font-family);
+  letter-spacing: -0.01em;
+}
+.auth__lede {
+  margin: 0;
+  max-width: 34ch;
+  font-size: 15px;
+  line-height: 21px;
+  opacity: 0.88;
+}
+.auth__route {
+  display: none;
+}
+
+/* ---- форма */
+.auth__main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px calc(env(safe-area-inset-bottom, 0px) + 32px);
+}
+.auth__form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auth__title {
+  margin: 0;
+  font: 700 26px/32px var(--atmr-font-family);
+  letter-spacing: -0.015em;
+}
+.auth__sub {
+  margin: -8px 0 4px;
+  color: var(--atmr-text-secondary);
+  font-size: 15px;
+  line-height: 21px;
+}
+.auth__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.auth__field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--atmr-text-secondary);
+}
+.auth__input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 14px;
+  border: 1.5px solid var(--atmr-border-strong);
+  border-radius: var(--atmr-border-radius-m);
+  background: var(--atmr-bg-surface1);
+  color: inherit;
+  font: 400 17px/22px var(--atmr-font-family);
+}
+.auth__input:focus {
+  outline: none;
+  border-color: var(--atmr-accent);
+  box-shadow: 0 0 0 3px var(--atmr-accent-muted);
+}
+.auth__input[aria-invalid='true'] {
+  border-color: var(--atmr-status-error);
+}
+.auth__pw {
+  position: relative;
+}
+.auth__pw .auth__input {
+  padding-right: 104px;
+}
+.auth__eye {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  min-width: 96px;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+  background: transparent;
+  color: var(--atmr-accent);
+  font: 500 15px/20px var(--atmr-font-family);
+  cursor: pointer;
+}
+.auth__eye:focus-visible,
+.auth__chip:focus-visible,
+.auth__link:focus-visible {
+  outline: 2px solid var(--atmr-accent);
+  outline-offset: 2px;
+}
+.auth__error {
+  margin: 0;
+  padding: 10px 14px;
+  border-radius: var(--atmr-border-radius-s);
+  background: var(--atmr-status-error-muted);
+  color: var(--atmr-status-error);
+  font-size: 15px;
+  line-height: 20px;
+}
+.auth__submit {
+  justify-content: center;
+  width: 100%;
+  min-height: 52px;
+  font: 600 17px/22px var(--atmr-font-family);
+  border-radius: var(--atmr-border-radius-m);
+}
+.auth__link {
+  align-self: center;
+  min-height: 48px;
+  padding: 0 12px;
+  border: 0;
+  background: none;
+  color: var(--atmr-accent);
+  font: 500 15px/20px var(--atmr-font-family);
+  cursor: pointer;
+}
+
+/* ---- демо-подсказка */
+.auth__demo {
+  margin-top: 4px;
+  padding: 14px;
+  border-left: 3px solid var(--atmr-brand-orange);
+  border-radius: var(--atmr-border-radius-xs);
+  background: var(--atmr-bg-surface1);
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--atmr-text-secondary);
+}
+.auth__demo p {
+  margin: 0 0 10px;
+}
+.auth__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.auth__chip {
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--atmr-border-default);
+  border-radius: var(--atmr-border-radius-s);
+  background: var(--atmr-bg-surface2);
+  color: var(--atmr-text-primary);
+  font: 600 14px/18px var(--atmr-font-family);
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.auth__chip span {
+  font-weight: 400;
+  color: var(--atmr-text-tertiary);
+}
+
+/* ---- десктоп: две колонны */
+@media (min-width: 860px) {
+  .auth {
+    flex-direction: row;
+  }
+  .auth__brand {
+    flex: 0 0 42%;
+    max-width: 560px;
+    justify-content: space-between;
+    padding: 48px;
+  }
+  .auth__name {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .auth__lede {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    opacity: 1;
+  }
+  .auth__route {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+  .auth__route path {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.55);
+    stroke-width: 3;
+    stroke-dasharray: 2 8;
+    stroke-linecap: round;
+  }
+  .auth__route circle {
+    fill: #fff;
+  }
+  .auth__route .auth__depot {
+    fill: var(--atmr-brand-orange);
+  }
+  .auth__main {
+    align-items: center;
+    padding: 48px;
+  }
+}

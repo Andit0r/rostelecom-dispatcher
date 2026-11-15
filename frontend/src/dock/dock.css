@@ -1,0 +1,434 @@
+/*
+ * Тема dockview в стиле Атомаро (светлая, акцент фиолетовый).
+ * Все цвета, радиусы и шрифты — из theme/tokens.css; переменные --dv-* переопределяют
+ * стандартный вид библиотеки. Класс .dockview-theme-atomaro идёт после .dockview-theme-light.
+ */
+
+.dock {
+  flex: 1 1 0;
+  min-height: 0;
+  width: 100%;
+}
+
+.dockview-theme-light.dockview-theme-atomaro {
+  color-scheme: light;
+  font-family: var(--atmr-font-family);
+
+  --dv-group-view-background-color: var(--atmr-bg-surface1);
+  --dv-tabs-and-actions-container-background-color: var(--atmr-bg-surface1);
+  --dv-tabs-and-actions-container-height: 40px;
+  --dv-tabs-and-actions-container-font-size: 14px;
+  --dv-tab-font-size: 14px;
+
+  --dv-activegroup-visiblepanel-tab-background-color: transparent;
+  --dv-activegroup-hiddenpanel-tab-background-color: transparent;
+  --dv-inactivegroup-visiblepanel-tab-background-color: transparent;
+  --dv-inactivegroup-hiddenpanel-tab-background-color: transparent;
+  --dv-activegroup-visiblepanel-tab-color: var(--atmr-text-primary);
+  --dv-activegroup-hiddenpanel-tab-color: var(--atmr-text-secondary);
+  --dv-inactivegroup-visiblepanel-tab-color: var(--atmr-text-primary);
+  --dv-inactivegroup-hiddenpanel-tab-color: var(--atmr-text-tertiary);
+  --dv-tab-divider-color: transparent;
+  --dv-tab-margin: 0;
+  --dv-tab-border-radius: 0;
+  --dv-tab-close-icon-size: 12px;
+
+  --dv-separator-border: transparent;
+  --dv-paneview-header-border-color: var(--atmr-border-default);
+  --dv-paneview-active-outline-color: var(--atmr-accent);
+
+  --dv-sash-color: transparent;
+  --dv-active-sash-color: var(--atmr-accent);
+  --dv-active-sash-transition-delay: 0.12s;
+  --dv-active-sash-transition-duration: 0.12s;
+  --dv-sash-border-radius: var(--atmr-border-radius-full);
+
+  --dv-drag-over-background-color: color-mix(in srgb, var(--atmr-accent) 12%, transparent);
+  --dv-drag-over-border-color: var(--atmr-accent);
+  --dv-drag-over-border: 2px solid var(--atmr-accent);
+  --dv-edge-dock-indicator-color: var(--atmr-accent);
+  --dv-dnd-compass-color: var(--atmr-accent);
+  --dv-dnd-compass-cell-color: var(--atmr-accent-muted);
+  --dv-dnd-compass-active-cell-color: var(--atmr-accent);
+  --dv-dnd-compass-edge-cell-color: var(--atmr-accent-muted);
+  --dv-smart-guides-color: var(--atmr-accent);
+  --dv-smart-guides-preview-color: color-mix(in srgb, var(--atmr-accent) 12%, transparent);
+
+  --dv-border-radius: var(--atmr-border-radius-m);
+  --dv-dropdown-border-radius: var(--atmr-border-radius-s);
+  --dv-icon-hover-background-color: var(--atmr-bg-surface3);
+  --dv-scrollbar-background-color: var(--atmr-border-strong);
+  --dv-tabs-container-scrollbar-color: var(--atmr-border-strong);
+
+  --dv-floating-box-shadow: var(--atmr-shadow-m), 0 0 0 1px var(--atmr-border-default);
+  --dv-floating-border: 1px solid var(--atmr-border-default);
+  --dv-floating-group-border: none;
+  --dv-floating-titlebar-background-color: var(--atmr-bg-surface2);
+  --dv-floating-titlebar-border-bottom: 1px solid var(--atmr-border-default);
+
+  --dv-context-menu-background-color: var(--atmr-bg-surface1);
+  --dv-context-menu-color: var(--atmr-text-primary);
+}
+
+/* Промежутки между окнами — цвет страницы, как у прежней сетки карточек */
+.dockview-theme-atomaro .dv-dockview {
+  background-color: transparent;
+}
+
+/* ---------------------------------------------------------------- группа = карточка */
+.dockview-theme-atomaro .dv-groupview {
+  border-radius: var(--atmr-border-radius-m);
+}
+.dockview-theme-atomaro .dv-groupview > .dv-tabs-and-actions-container {
+  border-bottom: var(--atmr-border-width-s) solid var(--atmr-border-default);
+  padding: 0 var(--atmr-spacing-1x) 0 var(--atmr-spacing-2x);
+  border-top-left-radius: var(--atmr-border-radius-m);
+  border-top-right-radius: var(--atmr-border-radius-m);
+}
+.dockview-theme-atomaro .dv-groupview > .dv-content-container {
+  border-bottom-left-radius: var(--atmr-border-radius-m);
+  border-bottom-right-radius: var(--atmr-border-radius-m);
+  overflow: hidden;
+}
+/* Контент с renderer="always" рисуется в оверлее над группой — скругляем и его */
+.dockview-theme-atomaro .dv-render-overlay {
+  border-bottom-left-radius: var(--atmr-border-radius-m);
+  border-bottom-right-radius: var(--atmr-border-radius-m);
+  overflow: hidden;
+}
+
+/* ---------------------------------------------------------------- вкладки (как TabsItem Атомаро) */
+.dockview-theme-atomaro .dv-tabs-container .dv-tab {
+  flex-grow: 0;
+  position: relative;
+  padding: 0 var(--atmr-spacing-1x) 0 var(--atmr-spacing-2x);
+  margin-right: var(--atmr-spacing-2x);
+  cursor: pointer;
+}
+.dockview-theme-atomaro .dv-tabs-container .dv-tab::before {
+  content: '';
+  position: absolute;
+  left: var(--atmr-spacing-2x);
+  right: var(--atmr-spacing-1x);
+  bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: transparent;
+  pointer-events: none;
+}
+.dockview-theme-atomaro .dv-groupview.dv-active-group .dv-tab.dv-active-tab::before {
+  background: var(--atmr-accent);
+}
+.dockview-theme-atomaro .dv-groupview.dv-inactive-group .dv-tab.dv-active-tab::before {
+  background: var(--atmr-border-strong);
+}
+.dockview-theme-atomaro .dv-tab:hover {
+  color: var(--atmr-text-primary);
+}
+.dockview-theme-atomaro .dv-tab.dv-tab-dragging {
+  opacity: 0.6;
+}
+
+.dk-tab {
+  display: flex;
+  align-items: center;
+  gap: var(--atmr-spacing-2x);
+  height: 100%;
+  font: 500 14px/20px var(--atmr-font-family);
+  white-space: nowrap;
+  user-select: none;
+}
+.dk-tab__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dk-tab__close {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--atmr-border-radius-xs);
+  background: none;
+  color: var(--atmr-text-tertiary);
+  cursor: pointer;
+  visibility: hidden;
+}
+.dv-tab.dv-active-tab .dk-tab__close,
+.dv-tab:hover .dk-tab__close,
+.dk-tab__close:focus-visible {
+  visibility: visible;
+}
+.dk-tab__close:hover {
+  background: var(--atmr-bg-surface3);
+  color: var(--atmr-text-primary);
+}
+@media (hover: none) {
+  .dk-tab__close {
+    visibility: visible;
+  }
+}
+
+/* пустое место в заголовке группы тоже тянет группу */
+.dockview-theme-atomaro .dv-void-container.dv-draggable {
+  cursor: grab;
+}
+
+/* ---------------------------------------------------------------- кнопки группы */
+.dk-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 100%;
+  padding-right: var(--atmr-spacing-1x);
+}
+.dk-action {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--atmr-border-radius-s);
+  background: none;
+  color: var(--atmr-text-tertiary);
+  cursor: pointer;
+}
+.dk-action:hover {
+  background: var(--atmr-accent-muted);
+  color: var(--atmr-accent);
+}
+
+/* ---------------------------------------------------------------- разделители */
+.dockview-theme-atomaro .dv-sash {
+  border-radius: var(--dv-sash-border-radius);
+}
+.dockview-theme-atomaro .dv-split-view-container.dv-horizontal > .dv-sash-container > .dv-sash.dv-enabled:hover,
+.dockview-theme-atomaro .dv-split-view-container.dv-vertical > .dv-sash-container > .dv-sash.dv-enabled:hover {
+  background-color: var(--atmr-accent);
+}
+
+/* ---------------------------------------------------------------- плавающие окна */
+.dockview-theme-atomaro .dv-resize-container {
+  border-radius: var(--atmr-border-radius-m);
+  border: 0;
+  box-shadow: var(--dv-floating-box-shadow);
+  /* НЕ overflow:hidden: рукоятки ресайза dockview выступают за край и обрезались бы.
+     Скругление содержимого даёт .dv-groupview (overflow: hidden ниже). */
+  overflow: visible;
+  box-sizing: border-box;
+  min-width: 240px;
+  min-height: 160px;
+  /* рамка 4px: контент (в т.ч. .dv-render-overlay карты/Ганта) смещается внутрь и не перекрывает
+     внутреннюю половину рукояток ресайза */
+  padding: 4px;
+  background-color: var(--atmr-bg-surface2);
+}
+.dockview-theme-atomaro .dv-resize-container .dv-groupview {
+  overflow: hidden;
+}
+/* Рукоятки ресайза dockview (штатно 4px, top:-2px). Контент групп с renderer="always" рисуется
+   в .dv-render-overlay (z-index выше контейнера окна) и перекрывает рукоятки, а штатный z-index
+   рукояток невалиден (циклическая var(--dv-overlay-z-index)) -> auto. Делаем 8px (±4 от края,
+   dockview считает размер от положения курсора относительно края) и 14x14 по углам. */
+.dockview-theme-atomaro .dv-resize-container [class*='dv-resize-handle-'] {
+  z-index: 50;
+}
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-top,
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-bottom {
+  height: 8px;
+  width: calc(100% - 16px);
+  left: 8px;
+}
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-top { top: -4px; }
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-bottom { bottom: -4px; }
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-left,
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-right {
+  width: 8px;
+  height: calc(100% - 16px);
+  top: 8px;
+}
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-left { left: -4px; }
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-right { right: -4px; }
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-topleft,
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-topright,
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-bottomleft,
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-bottomright {
+  width: 14px;
+  height: 14px;
+}
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-topleft { top: -5px; left: -5px; }
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-topright { top: -5px; right: -5px; }
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-bottomleft { bottom: -5px; left: -5px; }
+.dockview-theme-atomaro .dv-resize-container .dv-resize-handle-bottomright { bottom: -5px; right: -5px; }
+
+/* ---------------------------------------------------------------- подсветка места при перетаскивании */
+.dockview-theme-atomaro .dv-drop-target-anchor {
+  border-radius: var(--atmr-border-radius-s);
+}
+
+/* ---------------------------------------------------------------- выпадающий список скрытых вкладок */
+.dockview-theme-atomaro .dv-tabs-overflow-container {
+  border-radius: var(--atmr-border-radius-s);
+  box-shadow: var(--atmr-shadow-m), 0 0 0 1px var(--atmr-border-default);
+  background: var(--atmr-bg-surface1);
+}
+
+/* ---------------------------------------------------------------- содержимое панелей */
+.dock-panel {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--atmr-bg-surface1);
+  color: var(--atmr-text-primary);
+  font: var(--atmr-font-body-m);
+}
+.dock-panel > .list,
+.dock-panel > .panel {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.dock-panel > .panel {
+  border-radius: 0;
+  box-shadow: none;
+}
+.dock-panel .gantt__head {
+  padding-top: var(--atmr-spacing-2x);
+}
+
+.dk-watermark {
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: var(--atmr-spacing-2x);
+  padding: var(--atmr-spacing-6x);
+  text-align: center;
+  color: var(--atmr-text-secondary);
+  font: var(--atmr-font-body-s);
+}
+.dk-watermark h2 {
+  font: var(--atmr-font-heading-h4);
+  color: var(--atmr-text-primary);
+}
+.dk-watermark__actions {
+  display: flex;
+  gap: var(--atmr-spacing-2x);
+  margin-top: var(--atmr-spacing-2x);
+}
+
+/* ---------------------------------------------------------------- меню «Окна» в шапке */
+.winmenu {
+  position: relative;
+}
+.winmenu__trigger svg {
+  flex: none;
+}
+/* 1366: в шапке тесно — остаётся только иконка (подпись в title/aria-label) */
+@media (max-width: 1440px) {
+  .winmenu__label {
+    display: none;
+  }
+  .winmenu__trigger.btn--s {
+    padding: 0 var(--atmr-spacing-2x);
+  }
+}
+.btn--ghost.btn--neutral {
+  background: transparent;
+  color: var(--atmr-text-primary);
+}
+.btn--ghost.btn--neutral:hover,
+.winmenu__trigger[aria-expanded='true'] {
+  background: var(--atmr-bg-surface3);
+}
+.winmenu__pop {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 3000;
+  width: 280px;
+  padding: var(--atmr-spacing-2x);
+  border-radius: var(--atmr-border-radius-m);
+  background: var(--atmr-bg-surface1);
+  box-shadow: var(--atmr-shadow-m), 0 0 0 1px var(--atmr-border-default);
+  display: grid;
+  gap: 2px;
+}
+.winmenu__head {
+  padding: var(--atmr-spacing-1x) var(--atmr-spacing-2x);
+  font: 500 12px/16px var(--atmr-font-family);
+  color: var(--atmr-text-tertiary);
+}
+.winmenu__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--atmr-spacing-2x);
+  min-height: 36px;
+  padding: 0 var(--atmr-spacing-2x);
+  border-radius: var(--atmr-border-radius-s);
+  font: var(--atmr-font-body-s);
+  cursor: pointer;
+}
+.winmenu__item:hover {
+  background: var(--atmr-bg-surface2);
+}
+.winmenu__item input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.winmenu__box {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--atmr-border-strong);
+  border-radius: var(--atmr-border-radius-xs);
+  background: var(--atmr-bg-surface1);
+  display: grid;
+  place-items: center;
+}
+.winmenu__item input:checked + .winmenu__box {
+  border-color: var(--atmr-accent);
+  background: var(--atmr-accent);
+}
+.winmenu__item input:checked + .winmenu__box::after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  margin-top: -2px;
+  border-left: 2px solid var(--atmr-accent-on);
+  border-bottom: 2px solid var(--atmr-accent-on);
+  transform: rotate(-45deg);
+}
+.winmenu__item input:focus-visible + .winmenu__box {
+  outline: 2px solid var(--atmr-accent);
+  outline-offset: 2px;
+}
+.winmenu__sep {
+  height: 1px;
+  margin: var(--atmr-spacing-1x) 0;
+  background: var(--atmr-border-default);
+}
+.winmenu__reset {
+  height: 36px;
+  padding: 0 var(--atmr-spacing-2x);
+  border: 0;
+  border-radius: var(--atmr-border-radius-s);
+  background: none;
+  color: var(--atmr-accent);
+  font: 500 13px/18px var(--atmr-font-family);
+  text-align: left;
+  cursor: pointer;
+}
+.winmenu__reset:hover {
+  background: var(--atmr-accent-muted);
+}
+.winmenu__hint {
+  padding: var(--atmr-spacing-1x) var(--atmr-spacing-2x) var(--atmr-spacing-1x);
+  font: var(--atmr-font-description-m);
+  color: var(--atmr-text-tertiary);
+}
